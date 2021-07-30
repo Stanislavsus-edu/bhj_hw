@@ -17,6 +17,8 @@ class Game {
   }
 
   registerEvents() {
+    const key = () => this.currentSymbol.textContent.toUpperCase() == event.key.toUpperCase() ? this.success() : this.fail();
+    document.addEventListener('keyup', key)
     /*
       TODO:
       Написать обработчик события, который откликается
