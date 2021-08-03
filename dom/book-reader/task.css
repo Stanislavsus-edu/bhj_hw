@@ -77,7 +77,7 @@ body {
   border: 1px solid gray;
 }
 
-.font-size {
+.font_size {
   text-align: center;
   text-decoration: none;
   color: whitesmoke;
@@ -94,15 +94,15 @@ body {
   align-items: center;
 }
 
-.font-size_small {
+.font_size_small {
   font-size: 12px;
 }
 
-.font-size_big {
+.font_size_big {
   font-size: 20px;
 }
 
-.font-size_active {
+.font_size_active {
   border: 1px solid whitesmoke;
   border-radius: 50%;
 }
