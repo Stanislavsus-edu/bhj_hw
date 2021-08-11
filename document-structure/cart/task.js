@@ -7,7 +7,7 @@ for (let i = 0; i < plus.length; i++){
 		value[i].textContent++;
 	}
 	minus[i].onclick = () =>{
-		if (value[i].textContent > -1){
+		if (value[i].textContent > 1){
 			value[i].textContent--;
 		}
 	}

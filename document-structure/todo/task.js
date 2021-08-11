@@ -6,7 +6,7 @@ function addTask() {
     let htmlContainer = 
     `<div class="task">
         <div class="task__title">
-            ${taskInput.value}
+            ${taskInput.value.trim()}
         </div>
         <a href="#" class="task__remove">&times;</a>
     </div>`;
@@ -26,14 +26,14 @@ function removeTask() {
 };
 
 taskInput.addEventListener('keydown', (event) => {
-    if (event.key == 'Enter' && taskInput.value != '') {
+    if (event.key == 'Enter' && taskInput.value.trim() != '') {
         addTask();
     };
 });
 
 button.addEventListener('click', (event) => {
     event.preventDefault();
-    if (taskInput.value != '') {
+    if (taskInput.value.trim() != '') {
         addTask();
     };
 });
