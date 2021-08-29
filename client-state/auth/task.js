@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (localStorage.userId) {
         welcome.classList.add('welcome_active');
         userId.textContent = localStorage.userId;
+        form.classList.remove('signin_active');
     }
     else {
         form.classList.add('signin_active');
